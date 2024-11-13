@@ -1,0 +1,41 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Professional mobile car body repairs in Yorkshire" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | Smart Repairs Yorkshire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50">
+    <Header />
+    <div class="pt-20">
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --font-family: 'Inter', system-ui, sans-serif;
+  }
+  html {
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+  }
+</style>

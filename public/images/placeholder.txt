@@ -1,0 +1,12 @@
+Note: Please download and save the following images from the original website to the public/images/ directory:
+
+- bumper-repair.jpg
+- scratch-removal.jpg
+- dent-removal.jpg
+- alloy-wheel.jpg
+- bumper-repair-process.jpg
+- scratch-removal-process.jpg
+- dent-removal-process.jpg
+- alloy-wheel-repair-process.jpg
+
+These images should be optimized for web use while maintaining good quality.

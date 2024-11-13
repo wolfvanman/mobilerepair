@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServiceHero from '../../components/ServiceHero.astro';
+---
+
+<Layout 
+  title="Dent Removal" 
+  description="Professional car dent removal service in Yorkshire. Paintless dent removal and traditional dent repair services."
+>
+  <ServiceHero
+    title="Dent Removal"
+    description="Expert dent removal services using both paintless and traditional techniques."
+    image="/images/dent-removal.jpg"
+  />
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Professional Dent Removal</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>We offer comprehensive dent removal services for all types of dents:</p>
+          <ul class="mt-4 space-y-2">
+            <li>Door dings</li>
+            <li>Parking dents</li>
+            <li>Hail damage</li>
+            <li>Minor collision dents</li>
+            <li>Panel creases</li>
+          </ul>
+          <p class="mt-6">Our skilled technicians use both paintless dent removal (PDR) and traditional techniques to achieve the best possible results for your vehicle.</p>
+        </div>
+      </div>
+      <div class="space-y-8">
+        <img 
+          src="/images/dent-removal-process.jpg" 
+          alt="Dent removal process"
+          class="rounded-lg shadow-lg"
+        />
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Benefits of Our Dent Removal Service</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2">Preserves original paintwork</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2">Cost-effective solution</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2">Quick turnaround time</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16">
+      <div class="bg-blue-600 rounded-lg p-8 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Get Rid of Those Dents</h2>
+        <p class="text-xl mb-8">Contact us for a free dent removal assessment</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get a Quote
+          </a>
+          <a href="tel:07850-336-787" class="bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-800 transition-colors">
+            Call 07850 336 787
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

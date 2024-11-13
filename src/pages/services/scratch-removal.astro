@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServiceHero from '../../components/ServiceHero.astro';
+---
+
+<Layout 
+  title="Scratch Removal" 
+  description="Professional car scratch removal service in Yorkshire. Expert removal of all types of scratches and scuffs."
+>
+  <ServiceHero
+    title="Scratch Removal"
+    description="Professional scratch removal service to restore your car's pristine appearance."
+    image="/images/scratch-removal.jpg"
+  />
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Expert Scratch Removal Service</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>Our professional scratch removal service can handle all types of scratches:</p>
+          <ul class="mt-4 space-y-2">
+            <li>Clear coat scratches</li>
+            <li>Paint level scratches</li>
+            <li>Deep scratches</li>
+            <li>Scuffs and scrapes</li>
+            <li>Keying damage</li>
+          </ul>
+          <p class="mt-6">Using advanced techniques and professional-grade products, we can remove most scratches completely or significantly improve their appearance.</p>
+        </div>
+      </div>
+      <div class="space-y-8">
+        <img 
+          src="/images/scratch-removal-process.jpg" 
+          alt="Scratch removal process"
+          class="rounded-lg shadow-lg"
+        />
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Our Scratch Removal Process</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">1</span>
+              <span class="ml-3">Assessment of scratch depth and type</span>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">2</span>
+              <span class="ml-3">Surface preparation and cleaning</span>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">3</span>
+              <span class="ml-3">Professional scratch removal treatment</span>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">4</span>
+              <span class="ml-3">Paint correction and polishing</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16">
+      <div class="bg-blue-600 rounded-lg p-8 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Remove Those Scratches Today</h2>
+        <p class="text-xl mb-8">Get your free scratch removal quote</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get a Quote
+          </a>
+          <a href="tel:07850-336-787" class="bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-800 transition-colors">
+            Call 07850 336 787
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

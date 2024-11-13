@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+
+const services = [
+  {
+    title: "Bumper Repairs",
+    description: "Professional repairs for scratched, cracked, or damaged bumpers, restoring them to their original condition.",
+    icon: "🚗"
+  },
+  {
+    title: "Scratch Removal",
+    description: "Expert scratch removal services to eliminate unsightly marks and restore your car's appearance.",
+    icon: "✨"
+  },
+  {
+    title: "Dent Removal",
+    description: "Skilled paintless dent removal and traditional dent repair services for all vehicle types.",
+    icon: "🔨"
+  },
+  {
+    title: "Alloy Wheel Repairs",
+    description: "Complete alloy wheel restoration, fixing scuffs, scratches, and kerb damage.",
+    icon: "⚙️"
+  }
+];
+---
+
+<Layout title="Mobile Car Body Repairs">
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-blue-600 text-white py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Professional Mobile Car Body Repairs
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-blue-100">
+            Expert repairs at your location across Yorkshire
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+              Get a Quote
+            </a>
+            <a href="tel:07850-336-787" class="bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-800 transition-colors">
+              Call Us Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <p class="text-xl text-gray-600">Comprehensive mobile repair solutions for your vehicle</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map(service => (
+            <ServiceCard {...service} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Smart Repairs?</h2>
+          <p class="text-xl text-gray-600">The smart choice for professional car body repairs</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-600 text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Service</h3>
+            <p class="text-gray-600">Most repairs completed within the same day at your location</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-600 text-4xl mb-4">💰</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Cost-Effective</h3>
+            <p class="text-gray-600">Competitive pricing and often cheaper than insurance claims</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-600 text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Quality</h3>
+            <p class="text-gray-600">Professional repairs with attention to detail and lasting results</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Fix Your Car?</h2>
+        <p class="text-xl mb-8 text-blue-100">Contact us today for a free quote and same-day service</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get Started
+          </a>
+          <a href="tel:07850-336-787" class="bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-800 transition-colors">
+            07850 336 787
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
